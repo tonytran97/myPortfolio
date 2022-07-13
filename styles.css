@@ -1,0 +1,10 @@
+.navbar {
+    color: steelblue;
+    /* Behr Ice Cave */
+    background-color: rgba(43, 103, 125, 0.4);
+}
+
+a:link,
+a:visited {
+    color: steelblue;
+}
