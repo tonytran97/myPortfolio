@@ -51,7 +51,14 @@ h3 {
     font-weight: bold;
 }
 
-img {
+.progress {
     display: block;
     margin: auto;
+}
+
+.me {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    transform: rotate(-10deg);
 }
