@@ -80,3 +80,8 @@ figure {
     padding: 2%;
     border-style: double;
 }
+
+#contact-icons {
+    border-radius: 50%;
+    height: 70px;
+}
