@@ -4,13 +4,16 @@
 
 head,
 header {
-    display: block;
     margin: 8px;
+}
+
+body {
+    background-color: rgba(205, 180, 142, 0.3);
 }
 
 .navbar {
     color: steelblue;
-    background-color: rgba(43, 103, 125, 0.4);
+    background-color: rgba(43, 103, 125, 0.3);
 }
 
 a:link,
@@ -51,6 +54,13 @@ h3 {
     font-weight: bold;
 }
 
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5% 5%;
+    padding-left: 4%;
+}
+
 .progress {
     display: block;
     margin: auto;
@@ -61,4 +71,12 @@ h3 {
     height: 250px;
     border-radius: 50%;
     transform: rotate(-10deg);
+}
+
+.placeholder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 2%;
+    border-style: double;
 }
