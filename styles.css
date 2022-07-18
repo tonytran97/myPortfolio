@@ -8,17 +8,28 @@ header {
 }
 
 body {
-    background-color: rgba(205, 180, 142, 0.3);
+    background-color: rgba(177, 162, 150, 0.6);
 }
 
-.navbar {
-    color: steelblue;
-    background-color: rgba(43, 103, 125, 0.3);
+nav {
+    background-color: rgba(43, 103, 125, 0.4);
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: white;
 }
 
 a:link,
 a:visited {
-    color: steelblue;
+    color: rgba(93, 92, 97, 0.95);
 }
 
 h1 {
@@ -54,11 +65,30 @@ h3 {
     font-weight: bold;
 }
 
+h4 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5em;
+    display: block;
+}
+
 figure {
     display: flex;
     flex-wrap: wrap;
     margin: 1.5% 5%;
     padding-left: 4%;
+}
+
+footer {
+    text-align: center;
 }
 
 .progress {
@@ -68,9 +98,11 @@ figure {
 
 .me {
     width: 200px;
-    height: 250px;
+    height: 200px;
     border-radius: 50%;
     transform: rotate(-10deg);
+    margin-right: 10%;
+    float: right;
 }
 
 .placeholder {
@@ -79,6 +111,15 @@ figure {
     flex-direction: row;
     padding: 2%;
     border-style: double;
+}
+
+#aboutme {
+    display: inline-block;
+    border-style: solid;
+    margin: 20px 20px 20px 90px;
+    padding: 10px;
+    height: 160px;
+    width: fit-content;
 }
 
 #contact-icons {
