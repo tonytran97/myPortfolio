@@ -105,12 +105,22 @@ footer {
     float: right;
 }
 
-.placeholder {
+.placeholder,
+.project1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     padding: 2%;
-    border-style: double;
+}
+
+.project1 {
+    width: fit-content;
+    height: 500px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: cadetblue;
+    padding: 0%;
 }
 
 #aboutme {
@@ -122,7 +132,15 @@ footer {
     width: fit-content;
 }
 
+#projects {
+    border-style: double;
+}
+
 #contact-icons {
     border-radius: 50%;
     height: 70px;
+}
+
+#placeholdercenter {
+    text-align: center;
 }
