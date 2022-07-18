@@ -1,15 +1,11 @@
+/* Universal styles */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
 }
 
-head,
+/* header styles */
 header {
     margin: 8px;
-}
-
-body {
-    background-color: rgba(177, 162, 150, 0.6);
 }
 
 nav {
@@ -32,6 +28,12 @@ a:link,
 a:visited {
     color: rgba(93, 92, 97, 0.95);
 }
+
+/* body styles */
+body {
+    background-color: rgba(177, 162, 150, 0.6);
+}
+
 
 h1 {
     text-align: center;
@@ -88,10 +90,27 @@ figure {
     padding-left: 4%;
 }
 
+/* footer styles */
 footer {
     text-align: center;
 }
 
+footer section a {
+    margin: auto 10px;
+}
+
+/* styles for about me section */
+#aboutme {
+    display: inline-block;
+    text-align: center;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* styles for my photo */
 .me {
     display: block;
     margin: auto;
@@ -101,6 +120,7 @@ footer {
     transform: rotate(-10deg);
 }
 
+/* stles for projects section, mainly for just how the projects will be displayed on the webpage */
 .placeholder,
 .project1 {
     display: flex;
@@ -113,66 +133,79 @@ footer {
 .project1 {
     width: fit-content;
     height: 500px;
-    border-style: solid;
-    border-width: 20px;
-    border-color: cadetblue;
     padding: 0%;
 }
 
-#aboutme {
-    display: inline-block;
-    text-align: center;
-    border-style: solid;
-    margin: 10px;
-    padding: 10px;
-    height: fit-content;
-    width: fit-content;
-}
-
 #projects {
-    border-style: double;
+    border-style: solid;
     text-align: center;
 }
 
+/* styles for contact me icons at the end of the page */
 #contact-icons {
     border-radius: 50%;
     height: 70px;
 }
 
-#placeholdercenter {
+/* text alignment for placeholder.html */
+#placeholdercenter,
+#imagecenter {
     text-align: center;
+    margin: auto;
 }
 
+/* media queries for website responsiveness on different devices */
+/* laptop display */
 @media screen and (max-width: 1024px) {
     .empty {
-        width: 20%;
         justify-content: center;
         margin: auto;
         padding: 0%;
     }
 
     .project1 {
-        max-width: 1000px;
-        border: none;
+        max-width: 90vw;
     }
 }
 
+/* tablet display */
 @media screen and (max-width: 768px) {
-    .project1 {
-        max-width: 90%;
-        height: 80vh;
-        margin: auto;
+    .empty {
+        width: 100vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
-    .empty {
-        width: 100%;
-        margin: 10px;
+    .project1 {
+        height: 80vh;
+        margin-top: -20px;
+        margin-bottom: -10px;
     }
 }
 
+/* mobile L display */
+@media screen and (max-width: 426px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .project1 {
+        height: 50vh;
+    }
+
+    #contact-icons {
+        height: 60px;
+    }
+}
+
+/* mobile S display */
 @media screen and (max-width: 320px) {
     nav {
         font-size: small;
+    }
+
+    h1 {
+        font-size: 1.2em;
     }
 
     section {
@@ -182,4 +215,5 @@ footer {
     .project1 {
         height: 40vh;
     }
+
 }
