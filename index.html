@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyPortfolio</title>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg">
+          <div class="navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+ 
+<body>
+    <h1>Hello, my name is Tony Tran!</h1>
+    <h2>Welcome to my Portfolio!</h2>
+    <h3>~This is a Work in Progress~</h3>
+      <!-- I need a professional photo for my portfolio-->
+    <img class="me" src="images/me.png" alt="picture of me">
+
+    <section id="aboutme">
+        <h4>About Me</h4>
+        <p>Currently enrolled in the UW Bootcamp course.</p>
+        <p>We are only nine weeks into the program at the time of creating this portfolio.</p>
+        <p>Come along on my journey as you watch the evolution of my web designing abilities.</p>
+    </section>
+      
+<!-- Currently do not have any projects to input -->
+    <section id="projects">
+        <h4>Recent Projects</h4>
+        <div class="container text-center">
+          <div class="row">
+            <div class="card col" style="width: 18rem;">
+              <img src="images/What's For Dinner_.gif" class="card-img-top" alt="screenshot of my WhatsForDinner Project">
+              <div class="card-body">
+                <h4>WhatsForDinner</h4>
+                <p>Can't decide what to eat? WhatsForDinner generates meal and drink recipes at the click of a button.</p>
+                <br>
+                <a href="https://tonytran97.github.io/WhatsForDinner/" target="_blank" class="btn">Demo</a>
+              </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+              <img src="images/weatherDashPreview.png" class="card-img-top" alt="screenshot of my WhatsForDinner Project">
+              <div class="card-body">
+                <h4>Weather Dashboard</h4>
+                <p>Looking to travel? This weather application generates current and future forecasts of cities within the US.</p>
+                <br>
+                <a href="https://tonytran97.github.io/Weather-Dashboard/" target="_blank" class="btn">Demo</a>
+              </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+              <img src="images/workDaySample.png" class="card-img-top" alt="screenshot of my WhatsForDinner Project">
+              <div class="card-body">
+                <h4>Work Day Scheduler</h4>
+                <p>Need an application to keep track of events for work? This application will assist in tracking your daily events.</p>
+                <br>
+                <a href="https://tonytran97.github.io/Weather-Dashboard/" target="_blank" class="btn">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+</body>
+
+<footer>
+    <section id="contact">
+        <h4>Contact</h4>
+        <!-- Link to email is not recommended because of the risk of spam bots. I have done it only for the purposes of this project -->
+        <!-- Best practice to use the form inputs as show in Mini Project 1 -->
+        <a href="mailto:tonytran_97@live.com"> <img id="contact-icons" src="images/email-icon.png" alt="image of an email icon"></a>
+        <a href="https://github.com/tonytran97" target="_blank"> <img id="contact-icons" src="images/github.png" alt="image of github icon"></a>
+    </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>
